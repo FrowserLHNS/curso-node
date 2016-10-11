@@ -1,7 +1,7 @@
 {
   "name": "casadocodigo",
   "version": "1.0.0",
-  "description": "site da casa do codigo",
+  "description": "site da casa do codig",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
