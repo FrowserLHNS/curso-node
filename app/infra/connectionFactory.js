@@ -1,6 +1,7 @@
 var mysql = require('mysql');
 function createDBconnection(){
-  return mysql.createConnection({
+  if(!process.env.NODE_ENV) {
+      return mysql.createConnection({
       host : "localhost",
       user : 'root',
       password : 'impacta',
@@ -8,6 +9,15 @@ function createDBconnection(){
   });
 }
 
+  if(process.env.NODE_ENV == 'test'){
+      return mysql.createConnection({
+      host : "localhost",
+      user : 'root',
+      password : 'impacta',
+      database : 'casadocodigo_nodejs_test'
+      });
+    }
+}
 module.exports = function(){
     return createDBconnection;
 }

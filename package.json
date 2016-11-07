@@ -2,7 +2,7 @@
   "name": "casadocodigo",
   "version": "1.0.0",
   "description": "site da casa do codigo",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,8 @@
     "express-load": "^1.1.15",
     "http": "0.0.0",
     "mocha": "^3.1.2",
-    "mysql": "^2.11.1"
+    "mysql": "^2.11.1",
+    "supertest": "^2.0.1"
   },
   "devDependencies": {
     "mocha": "^3.1.2"
